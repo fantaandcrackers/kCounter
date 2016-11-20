@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="kCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 Calories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEQ-YI-V7g">
+                                <rect key="frame" x="132" y="50" width="337" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="337" id="Ezf-52-Cho"/>
+                                    <constraint firstAttribute="height" constant="55" id="OpT-1u-P84"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEW-HX-osk">
+                                <rect key="frame" x="25" y="555" width="81" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="WsL-EC-SfV"/>
+                                    <constraint firstAttribute="width" constant="81" id="zqz-Oa-kTs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="touchClearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ytl-KN-RvL"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0o-uL-5DS">
+                                <rect key="frame" x="180" y="196" width="240" height="207"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irn-lq-2JC">
+                                        <rect key="frame" x="26" y="18" width="81" height="40"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                        <state key="normal" title="+ 1"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzQ-o7-ltQ">
+                                        <rect key="frame" x="133" y="18" width="81" height="40"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                        <state key="normal" title="+ 10"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avs-qh-MOQ">
+                                        <rect key="frame" x="133" y="159" width="81" height="40"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                        <state key="normal" title="+ 1000"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                <integer key="value" value="1000"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nE-kN-wvL">
+                                        <rect key="frame" x="26" y="159" width="81" height="40"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                        <state key="normal" title="+ 500"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                <integer key="value" value="500"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bde-sW-MFZ">
+                                        <rect key="frame" x="26" y="84" width="81" height="40"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                        <state key="normal" title="+ 100"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                <integer key="value" value="100"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPp-IB-RoZ">
+                                        <rect key="frame" x="133" y="84" width="81" height="40"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                        <state key="normal" title="+ 200"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                <integer key="value" value="200"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="cMs-rl-D2L"/>
+                                    <constraint firstAttribute="height" constant="207" id="i6F-nn-rGt"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dok-QG-EPA">
+                                <rect key="frame" x="494" y="555" width="81" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Dm8-62-uF0"/>
+                                    <constraint firstAttribute="width" constant="81" id="mNJ-5F-lyV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Undo"/>
+                                <connections>
+                                    <action selector="touchUndo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l6A-jw-cQf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N0o-uL-5DS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1h7-Wx-DaG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dok-QG-EPA" secondAttribute="bottom" constant="8" id="BJc-No-sVO"/>
+                            <constraint firstItem="N0o-uL-5DS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GCI-OC-ItQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dok-QG-EPA" secondAttribute="trailing" constant="5" id="Lmf-4e-oHq"/>
+                            <constraint firstItem="GEQ-YI-V7g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R0L-N0-Raf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PEW-HX-osk" secondAttribute="bottom" constant="8" id="SBZ-dE-Adg"/>
+                            <constraint firstItem="PEW-HX-osk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="czv-sm-Rb6"/>
+                            <constraint firstItem="GEQ-YI-V7g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="z7x-p6-czP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calorieCountLabel" destination="GEQ-YI-V7g" id="ZGG-6Y-Ku0"/>
+                        <outlet property="clearButton" destination="PEW-HX-osk" id="RiX-VO-Nva"/>
+                        <outletCollection property="addButtons" destination="irn-lq-2JC" collectionClass="NSMutableArray" id="fvA-st-Kqw"/>
+                        <outletCollection property="addButtons" destination="vzQ-o7-ltQ" collectionClass="NSMutableArray" id="4k7-PN-myt"/>
+                        <outletCollection property="addButtons" destination="sPp-IB-RoZ" collectionClass="NSMutableArray" id="rCQ-Tz-m1V"/>
+                        <outletCollection property="addButtons" destination="7nE-kN-wvL" collectionClass="NSMutableArray" id="Dlc-jK-Mhn"/>
+                        <outletCollection property="addButtons" destination="avs-qh-MOQ" collectionClass="NSMutableArray" id="zUj-iC-k6l"/>
+                        <outletCollection property="addButtons" destination="Bde-sW-MFZ" collectionClass="NSMutableArray" id="PBH-90-o74"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="337"/>
+        </scene>
+    </scenes>
+</document>
